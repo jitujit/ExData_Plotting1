@@ -6,7 +6,7 @@ colnames(hoc) <- unlist(header)
 hoc$DateTime <- strptime(paste(hoc$Date, hoc$Time, sep=" "),"%d/%m/%Y %H:%M:%S")
 
 #Generate Plot
-plot(x = hoc$DateTime, y = hoc$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)", cex.lab=.7)
+plot(x = hoc$DateTime, y = hoc$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 
 #Save File
 dev.copy(png,"plot2.png", width=480, height=480)
