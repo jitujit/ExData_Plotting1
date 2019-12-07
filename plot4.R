@@ -6,7 +6,6 @@ colnames(hoc) <- unlist(header)
 hoc$DateTime <- strptime(paste(hoc$Date, hoc$Time, sep=" "),"%d/%m/%Y %H:%M:%S")
 
 #Generate Plot
-#Generate Plot
 par(mfrow = c(2,2))
 
 #Plot 1
