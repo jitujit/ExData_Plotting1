@@ -25,8 +25,6 @@ labels <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 legend("topright", legend=labels, col=c("black","red", "blue"), lty="solid", bty="n"
        , cex=.5)
 
-
-
 #Plot 4
 plot(hoc$DateTime,hoc$Global_reactive_power, type="l", ylab = "Global_reactive_power", xlab = "datetime", cex.lab = .8)
 
